@@ -1,0 +1,464 @@
+{
+  "luis_schema_version": "2.1.0",
+  "versionId": "0.1",
+  "name": "Tube",
+  "desc": "tube bot",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "None"
+    },
+    {
+      "name": "OnDevice.Help",
+      "inherits": {
+        "domain_name": "OnDevice",
+        "model_name": "Help"
+      }
+    },
+    {
+      "name": "TubeLineStatus"
+    },
+    {
+      "name": "TubeStatus"
+    }
+  ],
+  "entities": [],
+  "composites": [],
+  "closedLists": [
+    {
+      "name": "TubeLinesList",
+      "subLists": [
+        {
+          "canonicalForm": "bakerloo",
+          "list": [
+            "brown line",
+            "baker",
+            "bak"
+          ]
+        },
+        {
+          "canonicalForm": "central",
+          "list": [
+            "red line",
+            "cen",
+            "cent"
+          ]
+        },
+        {
+          "canonicalForm": "circle",
+          "list": [
+            "yellow line",
+            "circ",
+            "cir"
+          ]
+        },
+        {
+          "canonicalForm": "district",
+          "list": [
+            "green line",
+            "dis",
+            "dist"
+          ]
+        },
+        {
+          "canonicalForm": "jubilee",
+          "list": [
+            "grey line",
+            "gray line",
+            "jub"
+          ]
+        },
+        {
+          "canonicalForm": "metropolitan",
+          "list": [
+            "purple line",
+            "met",
+            "metro"
+          ]
+        },
+        {
+          "canonicalForm": "piccadilly",
+          "list": [
+            "blue line",
+            "navy line",
+            "dark blue line",
+            "pic",
+            "picadilly"
+          ]
+        },
+        {
+          "canonicalForm": "victoria",
+          "list": [
+            "blue line",
+            "light blue line",
+            "vic"
+          ]
+        },
+        {
+          "canonicalForm": "hammersmith-city",
+          "list": [
+            "hammersmith & city",
+            "hammersmith + city",
+            "hammersmith and city",
+            "hammersmith",
+            "ham",
+            "pink line",
+            "hammersmith city"
+          ]
+        },
+        {
+          "canonicalForm": "waterloo-city",
+          "list": [
+            "waterloo & city",
+            "waterloo and city",
+            "waterloo + city",
+            "teal line",
+            "wat",
+            "waterloo",
+            "waterloo city"
+          ]
+        },
+        {
+          "canonicalForm": "northern",
+          "list": [
+            "black line",
+            "nor",
+            "north"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "TubeList",
+      "subLists": [
+        {
+          "canonicalForm": "Tube",
+          "list": [
+            "London Underground",
+            "TFL",
+            "Metro",
+            "Train",
+            "Rail",
+            "tube",
+            "underground"
+          ]
+        }
+      ]
+    }
+  ],
+  "bing_entities": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "any delays on the tube?",
+      "intent": "TubeStatus",
+      "entities": []
+    },
+    {
+      "text": "any disruptions with the yellow line?",
+      "intent": "TubeLineStatus",
+      "entities": []
+    },
+    {
+      "text": "any problems with the met line?",
+      "intent": "TubeLineStatus",
+      "entities": []
+    },
+    {
+      "text": "any problems with tube travel today?",
+      "intent": "TubeStatus",
+      "entities": []
+    },
+    {
+      "text": "are there issues with district line?",
+      "intent": "TubeLineStatus",
+      "entities": []
+    },
+    {
+      "text": "blue line",
+      "intent": "TubeLineStatus",
+      "entities": []
+    },
+    {
+      "text": "blue line status",
+      "intent": "TubeLineStatus",
+      "entities": []
+    },
+    {
+      "text": "bye",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "can you help me",
+      "intent": "OnDevice.Help",
+      "entities": []
+    },
+    {
+      "text": "can you help me in the setup process",
+      "intent": "OnDevice.Help",
+      "entities": []
+    },
+    {
+      "text": "can you help me?",
+      "intent": "OnDevice.Help",
+      "entities": []
+    },
+    {
+      "text": "check the tube status",
+      "intent": "TubeStatus",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "hello what can you do",
+      "intent": "OnDevice.Help",
+      "entities": []
+    },
+    {
+      "text": "help",
+      "intent": "OnDevice.Help",
+      "entities": []
+    },
+    {
+      "text": "help me",
+      "intent": "OnDevice.Help",
+      "entities": []
+    },
+    {
+      "text": "help please",
+      "intent": "OnDevice.Help",
+      "entities": []
+    },
+    {
+      "text": "hey",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i need help",
+      "intent": "OnDevice.Help",
+      "entities": []
+    },
+    {
+      "text": "i need some help!",
+      "intent": "OnDevice.Help",
+      "entities": []
+    },
+    {
+      "text": "i need your help",
+      "intent": "OnDevice.Help",
+      "entities": []
+    },
+    {
+      "text": "i would like to know if the hammersmith city line is running ok?",
+      "intent": "TubeLineStatus",
+      "entities": []
+    },
+    {
+      "text": "is the blue line running?",
+      "intent": "TubeLineStatus",
+      "entities": []
+    },
+    {
+      "text": "is the gray line bad?",
+      "intent": "TubeLineStatus",
+      "entities": []
+    },
+    {
+      "text": "is the grey line good?",
+      "intent": "TubeLineStatus",
+      "entities": []
+    },
+    {
+      "text": "is the hammersmith & city line ok?",
+      "intent": "TubeLineStatus",
+      "entities": []
+    },
+    {
+      "text": "is the hammersmith and city line ok?",
+      "intent": "TubeLineStatus",
+      "entities": []
+    },
+    {
+      "text": "is the pink line ok?",
+      "intent": "TubeLineStatus",
+      "entities": []
+    },
+    {
+      "text": "is the waterloo city line fine",
+      "intent": "TubeLineStatus",
+      "entities": []
+    },
+    {
+      "text": "is there a delay on the northern line?",
+      "intent": "TubeLineStatus",
+      "entities": []
+    },
+    {
+      "text": "jub line",
+      "intent": "TubeLineStatus",
+      "entities": []
+    },
+    {
+      "text": "jub status",
+      "intent": "TubeLineStatus",
+      "entities": []
+    },
+    {
+      "text": "jubilee line",
+      "intent": "TubeLineStatus",
+      "entities": []
+    },
+    {
+      "text": "met line",
+      "intent": "TubeLineStatus",
+      "entities": []
+    },
+    {
+      "text": "ok",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "piccadilly",
+      "intent": "TubeLineStatus",
+      "entities": []
+    },
+    {
+      "text": "pink line",
+      "intent": "TubeLineStatus",
+      "entities": []
+    },
+    {
+      "text": "please help",
+      "intent": "OnDevice.Help",
+      "entities": []
+    },
+    {
+      "text": "service problems",
+      "intent": "TubeStatus",
+      "entities": []
+    },
+    {
+      "text": "show me more help topics",
+      "intent": "OnDevice.Help",
+      "entities": []
+    },
+    {
+      "text": "status",
+      "intent": "TubeStatus",
+      "entities": []
+    },
+    {
+      "text": "status of black line",
+      "intent": "TubeLineStatus",
+      "entities": []
+    },
+    {
+      "text": "tell me about the victoria line",
+      "intent": "TubeLineStatus",
+      "entities": []
+    },
+    {
+      "text": "tell me about tube services",
+      "intent": "TubeStatus",
+      "entities": []
+    },
+    {
+      "text": "tip",
+      "intent": "OnDevice.Help",
+      "entities": []
+    },
+    {
+      "text": "tube delays",
+      "intent": "TubeStatus",
+      "entities": []
+    },
+    {
+      "text": "tube disruption",
+      "intent": "TubeStatus",
+      "entities": []
+    },
+    {
+      "text": "tube status",
+      "intent": "TubeStatus",
+      "entities": []
+    },
+    {
+      "text": "underground status",
+      "intent": "TubeStatus",
+      "entities": []
+    },
+    {
+      "text": "victoria",
+      "intent": "TubeLineStatus",
+      "entities": []
+    },
+    {
+      "text": "what can i say ?",
+      "intent": "OnDevice.Help",
+      "entities": []
+    },
+    {
+      "text": "what can i say?",
+      "intent": "OnDevice.Help",
+      "entities": []
+    },
+    {
+      "text": "what is the status of the piccadilly line?",
+      "intent": "TubeLineStatus",
+      "entities": []
+    },
+    {
+      "text": "what is the tube status",
+      "intent": "TubeStatus",
+      "entities": []
+    },
+    {
+      "text": "what is the tube status?",
+      "intent": "TubeStatus",
+      "entities": []
+    },
+    {
+      "text": "whats the dark blue line like?",
+      "intent": "TubeLineStatus",
+      "entities": []
+    },
+    {
+      "text": "whats the light blue line status?",
+      "intent": "TubeLineStatus",
+      "entities": []
+    },
+    {
+      "text": "whats the london underground tube status?",
+      "intent": "TubeStatus",
+      "entities": []
+    },
+    {
+      "text": "whats the tube services like?",
+      "intent": "TubeStatus",
+      "entities": []
+    },
+    {
+      "text": "whats the tube status?",
+      "intent": "TubeStatus",
+      "entities": []
+    },
+    {
+      "text": "yo",
+      "intent": "None",
+      "entities": []
+    }
+  ]
+}
