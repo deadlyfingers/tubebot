@@ -10,7 +10,7 @@ const getExampleQuery = function() {
     return query;
   }
   var keys = Object.keys(dict);
-  if (keys.length < 0) {
+  if (keys.length === 0) {
     return query;
   }
   var i = Math.floor(Math.random() * keys.length);

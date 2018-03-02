@@ -5,6 +5,6 @@ module.exports = function(bot) {
       session.endDialog();
     })
     .triggerAction({
-      matches: /^bye|goodbye|good\sbye|thanks|ok$/i
+      matches: /^(bye|goodbye|good\sbye|thanks)/i
     });
 };

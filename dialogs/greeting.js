@@ -20,6 +20,6 @@ module.exports = function(bot) {
       session.endDialog();
     })
     .triggerAction({
-      matches: /^hi|hello|hey|yo$/i
+      matches: /^(hi|hello|hey|yo)$/i
     });
 };

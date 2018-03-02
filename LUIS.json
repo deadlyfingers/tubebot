@@ -65,7 +65,8 @@
           "list": [
             "grey line",
             "gray line",
-            "jub"
+            "jub",
+            "silver line"
           ]
         },
         {
@@ -171,6 +172,11 @@
       "entities": []
     },
     {
+      "text": "any updates?",
+      "intent": "TubeStatus",
+      "entities": []
+    },
+    {
       "text": "are there issues with district line?",
       "intent": "TubeLineStatus",
       "entities": []
@@ -183,6 +189,11 @@
     {
       "text": "blue line status",
       "intent": "TubeLineStatus",
+      "entities": []
+    },
+    {
+      "text": "bump",
+      "intent": "TubeStatus",
       "entities": []
     },
     {
@@ -346,6 +357,11 @@
       "entities": []
     },
     {
+      "text": "purple",
+      "intent": "TubeLineStatus",
+      "entities": []
+    },
+    {
       "text": "service problems",
       "intent": "TubeStatus",
       "entities": []
@@ -397,6 +413,16 @@
     },
     {
       "text": "underground status",
+      "intent": "TubeStatus",
+      "entities": []
+    },
+    {
+      "text": "update",
+      "intent": "TubeStatus",
+      "entities": []
+    },
+    {
+      "text": "updates",
       "intent": "TubeStatus",
       "entities": []
     },
